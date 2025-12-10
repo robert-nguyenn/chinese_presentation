@@ -1,0 +1,112 @@
+<!-- 
+  OPTIONAL: Replace Image Placeholders with Actual Images
+  
+  If you want to show real images instead of placeholder text,
+  follow these instructions:
+-->
+
+<!-- ============================================
+     CURRENT CODE (with placeholders)
+     ============================================ -->
+
+<!-- This is what's currently in index.html: -->
+
+<div class="image-placeholder">
+    <p>[Image: Recording Setup in Studio]</p>
+</div>
+
+
+<!-- ============================================
+     UPDATED CODE (with actual images)
+     ============================================ -->
+
+<!-- Replace the above with this after adding your images: -->
+
+<div class="process-image">
+    <img src="assets/images/recording-studio.jpg" alt="Recording Setup in Studio">
+</div>
+
+
+<!-- ============================================
+     DO THIS FOR ALL 3 IMAGES
+     ============================================ -->
+
+<!-- Process Card 1 - Replace: -->
+<div class="image-placeholder">
+    <p>[Image: Recording Setup in Studio]</p>
+</div>
+
+<!-- With: -->
+<div class="process-image">
+    <img src="assets/images/recording-studio.jpg" alt="Recording Setup in Studio">
+</div>
+
+
+<!-- Process Card 2 - Replace: -->
+<div class="image-placeholder">
+    <p>[Image: MuseScore Interface with Instruments]</p>
+</div>
+
+<!-- With: -->
+<div class="process-image">
+    <img src="assets/images/musescore-interface.jpg" alt="MuseScore Interface with Instruments">
+</div>
+
+
+<!-- Process Card 3 - Replace: -->
+<div class="image-placeholder">
+    <p>[Image: Final MuseScore Composition Screenshot]</p>
+</div>
+
+<!-- With: -->
+<div class="process-image">
+    <img src="assets/images/final-composition.jpg" alt="Final MuseScore Composition Screenshot">
+</div>
+
+
+<!-- ============================================
+     ADD THIS CSS
+     ============================================ -->
+
+/* 
+  Add this to css/styles.css after the .image-placeholder section
+  (around line 350)
+*/
+
+.process-image {
+    margin: var(--spacing-md) 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.process-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform var(--transition-medium);
+}
+
+.process-image img:hover {
+    transform: scale(1.02);
+}
+
+
+<!-- ============================================
+     SUMMARY
+     ============================================ -->
+
+<!--
+  1. Add your 3 images to assets/images/ folder:
+     - recording-studio.jpg
+     - musescore-interface.jpg
+     - final-composition.jpg
+
+  2. In index.html, replace the 3 <div class="image-placeholder"> 
+     sections with <div class="process-image"> sections (shown above)
+
+  3. Add the .process-image CSS code to styles.css
+
+  4. Done! Your images will now display beautifully
+-->
